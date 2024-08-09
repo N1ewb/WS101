@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-container">
+        <h1>Old York Times</h1>
+        <h3>Newsletter for all Ages</h3>
+        <p>Your source of daily news and articles</p>
+        <div class="spacer"></div>
+        
+        <form id="form">
+            <p style="text-align: center;">Enter details to view articles</p>
+            <input id="fullName" type="text" name="fullName" placeholder="Full Name"  />
+            <input id="email" type="email" name="email" placeholder="Email"  />
+            <input id="password" type="password" name="password" placeholder="Password"  />
+            
+            <div class="gender-container">
+                <p>Gender</p>
+                <div class="genders">
+                    <label for="male">Male</label>
+                    <input id="male" type="radio" name="gender" value="Male" />
+                    <label for="female">Female</label>
+                    <input id="female" type="radio" name="gender" value="Female"  />
+                    <label for="'other">Other</label>
+                    <input id="other" type="radio" name="gender" value="Other"  checked="checked" />
+                </div>
+            </div>
+            <input id="telNumber" type="tel" name="telNumber" placeholder="Telephone Number"  />
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="5" cols="25"></textarea>
+            <div class="subscribe-container"><label for="subscribe">Subscribe to Newsletter</label>
+                <input id="subscribe" type="checkbox" name="subscribe"  /></div>
+            <button id="submitButton">Submit</button>
+        </form>
+        <div class="error-message" id="error-message"></div>
+        <div class="display-message" id="display-message"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
